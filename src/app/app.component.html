@@ -1,18 +1,18 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div class="container-fluid">
   45
-  <div class="row" id="heroes">
+  <div class="row card-group" id="heroes">
     <div class="col-md-2 card" *ngFor="let hero of heroes">
       <div class="card-block">
         {{hero.getCharacter().name}} (hp: {{hero.getCharacter().health}})
       </div>
     </div>
   </div>
-  <div class="row" id="opponents">
-    <div class="col-md-6">
+  <div class="row card-deck" id="opponents">
+    <div class="col-md-6 card">
       villai
     </div>
-    <div class="col-md-6">
+    <div class="col-md-6 card">
       environment
     </div>
   </div>
