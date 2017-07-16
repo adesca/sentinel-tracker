@@ -1,0 +1,19 @@
+<form #heroForm="ngForm">
+  {{diagnostic}}
+
+  <div class="card-block">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name"
+          required
+          [(ngModel)]="newHero.name" name="name">
+    </div>
+  </div>
+  
+  <div class="card-footer">
+    <button type="submit" class="btn btn-primary"
+      (click)="addHero()">
+      <fa name="plus-square" size="3x"></fa>
+    </button>
+  </div>
+</form>

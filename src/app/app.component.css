@@ -1,0 +1,19 @@
+.container-fluid {
+  height: 100vh;
+}
+
+.row {
+  height: 45%;
+}
+
+button {
+  width: 90%;
+}
+
+.ng-valid[required] {
+  border-left: 5px solid #42A948; /* green */
+}
+
+.ng-invalid:not(form)  {
+  border-left: 5px solid #a94442; /* red */
+}

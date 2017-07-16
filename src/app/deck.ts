@@ -16,21 +16,16 @@ export class Deck {
 
 class Character {
    private health: number;
+   private totalHealth: number;
    private name: string;
    public statuses: Status[];
 
    constructor(name: string, health: number) {
      this.name = name;
      this.health = health;
+     this.totalHealth = health;
    }
 
-   public getHealth = function(): number {
-     return this.health;
-   }
-
-   public getName = function(): string {
-     return this.name;
-   }
 }
 
 class Status {
