@@ -6,10 +6,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AngularFontAwesomeModule } from 'angular-font-awesome/angular-font-awesome';
 
 import { AppComponent } from './app.component';
+import { HeroDeckComponent } from './hero-deck/hero-deck.component';
+import { StatusColumnComponent } from './status-column/status-column.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeroDeckComponent,
+    StatusColumnComponent
   ],
   imports: [
     BrowserModule,
